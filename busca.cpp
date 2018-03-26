@@ -11,13 +11,15 @@ int busca_sequencial(vector<int> vetor, int numero){
 }
 
 int main() {
-	int n, posicao, numero_pesquisado=1,i=0,auxiliar;
+	int n, posicao, numero_pesquisado=1,i=0,auxiliar,alcance_rand;
 	vector <int> vetor_aleatorio;
 	cout << "Digite o tamanho do Vetor desejado:" <<endl;
 	cin >> n;
+    cout << "Digite o valor aleatório limite:" <<endl;
+    cin >> alcance_rand;
 	cout <<endl;
 	for(int i=0;i<n;i++){
-		vetor_aleatorio.push_back(rand() % 100);
+		vetor_aleatorio.push_back(rand() % alcance_rand);
 	}
 	while(numero_pesquisado>0){
 		cout << "Digite o número que vc procura:" <<endl;
