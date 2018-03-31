@@ -16,7 +16,7 @@ def insertionsort (vetor):
 		vetor[j+1]=aux
 	return vetor
 	
-while(tamanho<=7000):
+while(tamanho<=10000):
 	vetor = []
 	for _ in range(tamanho):
 		vetor.append(random.randint(0, 100))
@@ -24,11 +24,9 @@ while(tamanho<=7000):
 	insertionsort(vetor)
 	fim = time.time()
 	tempo=fim-inicio
-	print(tempo)
 	del vetor [ 00:len(vetor) ] 
 	tamanhos.append(tamanho)
 	tempos.append(tempo)
-	print(tamanho)
 	if(tamanho>=1000):
 		tamanho=tamanho+250
 	else:
